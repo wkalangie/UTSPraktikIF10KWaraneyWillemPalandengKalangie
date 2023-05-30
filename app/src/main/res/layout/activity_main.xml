@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Nama : Waraney Willem Palandeng Kalangie-->
+<!--NIM : 10119904-->
+<!--Kelas : IF-10K-->
+<!--Tanggal Pengerjaan : 30/05/2023-->
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:background="#EFF2F3"
+        android:scrollbars="vertical"
+        tools:context=".MainActivity">
+
+        <RelativeLayout
+            android:id="@+id/box1"
+            android:layout_width="match_parent"
+            android:layout_height="181dp"
+            android:clipToOutline="true"
+            android:background="@drawable/round_outline_white">
+
+            <ImageView
+                android:layout_marginLeft="18dp"
+                android:id="@+id/banner"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/banner"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/box2"
+            android:layout_below="@id/box1"
+            android:layout_marginTop="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="172dp"
+            android:padding="16dp"
+            android:background="@drawable/round_outline_white">
+
+            <TextView
+                android:id="@+id/pelaksanaan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textSize="14sp"
+                android:text="Pelaksanaan PPDB Tahap 1 - 2023"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <ImageView
+                android:id="@+id/imageView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="33dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginLeft="18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/Bottom" />
+            <ImageView
+                android:id="@+id/detail"
+                android:layout_alignParentRight="true"
+                android:layout_width="70dp"
+                android:layout_height="24dp"
+                android:src="@drawable/card1" />
+            <ImageView
+                android:id="@+id/profil_tahapan"
+                android:layout_below="@id/pelaksanaan"
+                android:layout_marginTop="60dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/profil_tahapan" />
+            <TextView
+                android:id="@+id/persiapan"
+                android:layout_below="@id/pelaksanaan"
+                android:layout_marginTop="62dp"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@id/profil_tahapan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Persiapan"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="14sp"/>
+            <TextView
+                android:id="@+id/tanggal"
+                android:layout_below="@id/persiapan"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@id/profil_tahapan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="17 Mei - 05 Juni 2023"
+                android:textSize="12sp" />
+            <ImageView
+                android:id="@+id/tahapan2"
+                android:layout_below="@id/detail"
+                android:layout_marginTop="60dp"
+                android:layout_marginRight="15dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/tahapan2" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/box3"
+            android:layout_below="@id/box2"
+            android:layout_marginTop="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="205dp"
+            android:padding="16dp"
+            android:background="@drawable/round_outline_white">
+
+            <ImageView
+                android:id="@+id/icon_pemberitahuan"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/icon_pemberitahuan" />
+
+            <TextView
+                android:id="@+id/seleksi"
+                android:layout_below="@+id/icon_pemberitahuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Pengumuman Hasil Seleksi"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+
+            <RelativeLayout
+                android:id="@+id/green_box"
+                android:layout_below="@id/seleksi"
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:padding="16dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/round_outline_green" >
+
+                <TextView
+                    android:id="@+id/dinyatakan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Anda dinyatakan diterima di"
+                    android:textSize="12sp"
+                    android:textColor="#069550" />
+
+                <ImageView
+                    android:id="@+id/detail2"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="70dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/card2" />
+
+                <TextView
+                    android:id="@+id/sma"
+                    android:layout_below="@id/dinyatakan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="SMA Negeri 1 Bojonggede"
+                    android:textSize="14sp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/jalur"
+                    android:layout_below="@id/sma"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Jalur Prestasi Kejuaraan"
+                    android:textSize="12sp"
+                    android:textColor="#616161" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/box4"
+            android:layout_below="@id/box3"
+            android:layout_marginTop="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:padding="16dp"
+            android:background="@drawable/round_outline_white">
+
+            <ImageView
+                android:id="@+id/logo_wisuda"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/logo_wisuda" />
+            <TextView
+                android:id="@+id/layanan"
+                android:layout_below="@+id/logo_wisuda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Layanan PPDB"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+            <ImageView
+                android:id="@+id/lokasi"
+                android:layout_below="@id/layanan"
+                android:layout_width="80dp"
+                android:layout_height="25dp"
+                android:src="@drawable/lokasi" />
+
+            <RelativeLayout
+                android:id="@+id/info"
+                android:layout_below="@id/lokasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+                <ImageView
+                    android:id="@+id/info_sekolah"
+                    android:layout_marginTop="16dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/info_sekolah" />
+                <TextView
+                    android:id="@+id/desk_info"
+                    android:layout_toRightOf="@id/info_sekolah"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Info Sekolah PPDB"
+                    android:textSize="14sp"
+                    android:textColor="@color/black" />
+                <ImageView
+                    android:id="@+id/panah1"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="34dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/header_arrow"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/sosialisasi"
+                android:layout_below="@id/info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp" >
+                <ImageView
+                    android:id="@+id/sosialisasi_logo"
+                    android:layout_marginTop="16dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/logo_sosialisasi" />
+                <TextView
+                    android:id="@+id/sosialisasippdb"
+                    android:layout_toRightOf="@id/sosialisasi_logo"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sosialisasi PPDB"
+                    android:textSize="14sp"
+                    android:textColor="@color/black" />
+                <ImageView
+                    android:id="@+id/panah2"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="34dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/header_arrow"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/pendaftaran"
+                android:layout_below="@id/sosialisasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp" >
+                <ImageView
+                    android:id="@+id/logo_pendaftaran"
+                    android:layout_marginTop="16dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/pendaftaran1" />
+                <TextView
+                    android:id="@+id/pendaftaran1"
+                    android:layout_toRightOf="@id/logo_pendaftaran"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pendaftaran PPDB Tahap 1"
+                    android:textSize="14sp"
+                    android:textColor="@color/black" />
+                <ImageView
+                    android:id="@+id/panah3"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="34dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/header_arrow"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/hotline1"
+                android:layout_below="@id/pendaftaran"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp" >
+                <ImageView
+                    android:id="@+id/hotline"
+                    android:layout_marginTop="16dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/hotline" />
+                <TextView
+                    android:id="@+id/tekshotline"
+                    android:layout_toRightOf="@id/hotline"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hotline"
+                    android:textSize="14sp"
+                    android:textColor="@color/black" />
+                <ImageView
+                    android:id="@+id/panah4"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="34dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/header_arrow"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/box5"
+            android:layout_below="@id/box4"
+            android:layout_marginTop="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="800dp"
+            android:padding="16dp"
+            android:background="@drawable/round_outline_white">
+
+            <ImageView
+                android:id="@+id/icon_pemberitahuan2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/icon_pemberitahuan" />
+            <TextView
+                android:id="@+id/beritateks"
+                android:layout_below="@+id/icon_pemberitahuan2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Berita Terkait PPDB"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/dapatkanteks"
+                android:layout_marginTop="6dp"
+                android:layout_below="@id/beritateks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dapatkan semua informasi terbaru dan terpopuler terkait PPDB"/>
+            <ImageView
+                android:id="@+id/tebular"
+                android:layout_below="@id/dapatkanteks"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:src="@drawable/tebular" />
+            <RelativeLayout
+                android:id="@+id/berita_1"
+                android:layout_below="@id/tebular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+                <ImageView
+                    android:id="@+id/img_berita1"
+                    android:layout_marginTop="16dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/img_berita" />
+                <TextView
+                    android:id="@+id/teks_berita1"
+                    android:layout_toRightOf="@id/img_berita1"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PPDB SMA/SMK 2022, Ridwan Kamil: PPDB di Jawa Barat..."
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/desk_berita1"
+                    android:layout_below="@id/teks_berita1"
+                    android:layout_toRightOf="@id/img_berita1"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pendidikan | 15 Jam yang lalu"/>
+                <ImageView
+                    android:id="@+id/panah5"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="34dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/header_arrow"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/berita_2"
+                android:layout_below="@id/berita_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+                <ImageView
+                    android:id="@+id/img_berita2"
+                    android:layout_marginTop="16dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/img_berita" />
+                <TextView
+                    android:id="@+id/teks_berita2"
+                    android:layout_toRightOf="@id/img_berita2"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PPDB SMA/SMK 2022, Ridwan Kamil: PPDB di Jawa Barat..."
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/desk_berita2"
+                    android:layout_below="@id/teks_berita2"
+                    android:layout_toRightOf="@id/img_berita2"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pendidikan | 15 Jam yang lalu"/>
+                <ImageView
+                    android:id="@+id/panah6"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="34dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/header_arrow"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/berita_3"
+                android:layout_below="@id/berita_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+                <ImageView
+                    android:id="@+id/img_berita3"
+                    android:layout_marginTop="16dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/img_berita" />
+                <TextView
+                    android:id="@+id/teks_berita3"
+                    android:layout_toRightOf="@id/img_berita3"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PPDB SMA/SMK 2022, Ridwan Kamil: PPDB di Jawa Barat..."
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/desk_berita3"
+                    android:layout_below="@id/teks_berita3"
+                    android:layout_toRightOf="@id/img_berita3"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pendidikan | 15 Jam yang lalu"/>
+                <ImageView
+                    android:id="@+id/panah7"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="34dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/header_arrow"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/berita_4"
+                android:layout_below="@id/berita_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+                <ImageView
+                    android:id="@+id/img_berita4"
+                    android:layout_marginTop="16dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/img_berita" />
+                <TextView
+                    android:id="@+id/teks_berita4"
+                    android:layout_toRightOf="@id/img_berita4"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PPDB SMA/SMK 2022, Ridwan Kamil: PPDB di Jawa Barat..."
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/desk_berita4"
+                    android:layout_below="@id/teks_berita4"
+                    android:layout_toRightOf="@id/img_berita4"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pendidikan | 15 Jam yang lalu"/>
+                <ImageView
+                    android:id="@+id/panah8"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="34dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/header_arrow"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/berita_5"
+                android:layout_below="@id/berita_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+                <ImageView
+                    android:id="@+id/img_berita5"
+                    android:layout_marginTop="16dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/img_berita" />
+                <TextView
+                    android:id="@+id/teks_berita5"
+                    android:layout_toRightOf="@id/img_berita5"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PPDB SMA/SMK 2022, Ridwan Kamil: PPDB di Jawa Barat..."
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/desk_berita5"
+                    android:layout_below="@id/teks_berita5"
+                    android:layout_toRightOf="@id/img_berita5"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pendidikan | 15 Jam yang lalu"/>
+                <ImageView
+                    android:id="@+id/panah9"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="34dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/header_arrow"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/lihatsemua"
+                android:layout_below="@+id/berita_5"
+                android:paddingTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lihat semua berita"
+                    android:textStyle="bold"
+                    android:textColor="#16A75C"/>
+                <ImageView
+                    android:id="@+id/panah10"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="4dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/header_arrow"/>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>
